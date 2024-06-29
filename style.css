@@ -1,0 +1,80 @@
+.container {
+  width: calc(100vh * (9 / 16)); 
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.contentsbox{
+  padding: 20px;
+}
+
+.back {
+  position: absolute;
+}
+
+
+.title h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.fromaccount {
+  margin-top: 40px;
+}
+
+.fromaccount h2 {
+  font-size: 24px;
+  color: rgb(75, 75, 75);
+}
+
+.fromaccount h2 strong{
+  font-weight: 520;
+  font-size: 24px;
+}
+
+.fromaccount p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: rgb(75, 75, 75);
+}
+
+.toaccount {
+  margin-top: 40px;
+}
+
+.toaccount h2 {
+  font-size: 24px;
+  color: rgb(75, 75, 75);
+}
+
+.toaccount h2 strong{
+  font-weight: 520;
+  font-size: 24px;
+}
+
+.toaccount p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: rgb(159, 159, 159);
+}
+
+.number{
+  margin-top: 55px;
+}
+
+.number h2{
+  font-size: 36px;
+  color: rgb(200, 200, 200);
+  font-weight: 550;
+}
+
+.tag{
+  margin-top: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(83, 83, 83);
+}
