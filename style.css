@@ -82,7 +82,7 @@
   font-weight: 500;
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.3s ease;
 }
 
 .digit.show {
@@ -96,14 +96,14 @@
   color: rgb(0, 0, 0);
   font-weight: 500;
   opacity: 0;
-  transition: opacity 0.2s ease, all 0.2s ease;
+  transition: opacity 0.4s ease, all 0.2s ease;
   
 }
 
 .digit2.show {
   width : 0.3em;
   opacity: 1;
-  transition: opacity 0.2s ease, all 0.2s ease;
+  transition: opacity 0.4s ease, all 0.2s ease;
 
 }
 
@@ -117,11 +117,33 @@
   color: rgb(83, 83, 83);
 }
 
+.CTA{
+  /* margin-top: 30px; */
+  background-color: rgb(54, 88, 255);
+  height:0px;
+  color: white;
+  position: absolute;
+  bottom: 300px;
+  width: calc(100vh * (9 / 16)); 
+  /* display: none; */
+  transition: all 0.3s;
+  z-index: 0;
+}
+
+.CTA h4{
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
 .keypad{
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: relative;
 }
 
 .btn{

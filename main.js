@@ -1,6 +1,7 @@
 document.querySelector('.keypad').addEventListener('click', function(event) {
     const display = document.querySelector('.number');
     const button = event.target;
+    const ctaPop = document.querySelector('.CTA');
 
     if (button.classList.contains('btn')) {
         const value = button.textContent;
@@ -64,11 +65,13 @@ document.querySelector('.keypad').addEventListener('click', function(event) {
                 const placeholder = document.createElement('h2');
                 placeholder.textContent = '얼마나 옮길까요?';
                 display.appendChild(placeholder);
+                ctaPop.style.height = '0px';
             }
         } else {
             // 숫자 버튼 처리
             if (display.querySelector('h2')) {
                 display.removeChild(display.querySelector('h2'));
+                ctaPop.style.height = '50px';
             }
 
             digit2s.forEach(s => {
@@ -184,4 +187,10 @@ document.querySelector('.keypad').addEventListener('click', function(event) {
             });
         }
     }
+});
+
+
+document.querySelector('.CTA').addEventListener('click', function(){
+    alert('이것만 입금하게?? 쪼금만 더 맘 써보자~');
+    location.reload();
 });
